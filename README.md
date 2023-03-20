@@ -1,8 +1,8 @@
 # Continuous Assessment 1
 
-Student Name: Your name
-Student ID: 123456
-Course: Your course
+Student Name: Akinola Daniel Gbenle
+Student ID: 24180
+Course: Mobile app1
 
 ## Requirement Checklist
 

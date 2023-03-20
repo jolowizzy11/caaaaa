@@ -1,18 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
+    <!-- Profile photo -->
+    <ImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/dublin"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Details -->
+    <LinearLayout
+        android:id="@+id/details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_photo"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/copyright_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gbenle Akinola Daniel"/>
+
+        <TextView
+            android:id="@+id/course_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Apps1"/>
+
+        <ImageView
+            android:id="@+id/github_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/danny" />
+
+        <TextView
+            android:id="@+id/username_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"/>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/education_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education"/>
+
+        <Button
+            android:id="@+id/skills_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skills"/>
+
+        <Button
+            android:id="@+id/achievements_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievements"/>
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"/>
+    </LinearLayout>
+
+    <!-- Copyright text -->
     <TextView
+        android:id="@+id/name_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Copyright &#169; 2023, Gbenle Akinola Daniel"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
